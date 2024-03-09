@@ -10,20 +10,11 @@
         }, 1);
     };
     spinner();
-    
-    
-    // Initiate the wowjs
     new WOW().init();
-
-
-    // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
     });
-
-
-    // Typed Initiate
     if ($('.typed-text-output').length == 1) {
         var typed_strings = $('.typed-text').text();
         var typed = new Typed('.typed-text-output', {
